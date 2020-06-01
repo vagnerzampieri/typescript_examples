@@ -9,8 +9,14 @@ interface MailMessage {
   attachment?: string[]; // or Array<string>
 }
 
+// DTO = Data Transfer Object (DDD)
+interface MessageDTO {
+  to: MailTo;
+  message: MailMessage;
+}
+
 class EmailService {
-  sendMail(to: MailTo, message: MailMessage) {
+  sendMail({ to, message }: MessageDTO) {
     console.log(`Email enviado ${to.name}: ${message.subject}`);
   }
 }
