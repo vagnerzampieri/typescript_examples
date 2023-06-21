@@ -12,3 +12,9 @@
 
  - `cd example-1/frontend`
  - `yarn start`
+
+#### App fullstack com TypeScript
+ - Construindo um app fullstack com o melhor do TypeScript - https://www.youtube.com/watch?v=fx7JqqCw1qg
+ - exemplo com zod, tsx, tsup e vitest
+ - `cd example-2`
+ - `npm run start`
